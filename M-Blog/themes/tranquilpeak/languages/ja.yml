@@ -1,5 +1,5 @@
 # date format displayed everywhere in the blog
-date_format: "YYYY/MM/DD"
+date_format: "YYYY/MM/DD HH:mm"
 
 global:
     home: "ホーム"
@@ -17,7 +17,7 @@ global:
     facebook: "Facebook"
     google_plus: "Google Plus"
     linkedin: "LinkedIn"
-    mail: "メール"
+    mail: "Gmail"
     rss: "RSS"
     share_on_facebook: "Facebookで共有"
     share_on_twitter: "Twitterで共有"

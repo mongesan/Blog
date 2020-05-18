@@ -10,6 +10,16 @@
     <% } %>
 <% } %>
 <nav id="sidebar" data-behavior="<%= sidebarBehavior %>">
+    <div class="sidebar-header">
+        <a href=<%= config.url %>> 
+            <h1 class="sidebar-title">
+                <%= config.title %>
+            </h1>
+            <h2 class="sidebar-subtitle">
+                - <%= config.subtitle %> -
+            </h2>
+        </a>
+    </div>
     <div class="sidebar-container">
         <% if (authorPicture) { %>
             <div class="sidebar-profile">

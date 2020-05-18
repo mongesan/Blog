@@ -26,6 +26,11 @@
         a {
             color: map-get($colors, light);
         }
+        
+        i.fas {
+            width: 14px;
+            text-align: center;
+        }
     }
     .post-content {
         text-rendering: optimizelegibility;

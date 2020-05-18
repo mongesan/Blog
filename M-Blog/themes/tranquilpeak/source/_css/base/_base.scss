@@ -141,6 +141,10 @@ pre > code {
 
 // inline code
 code {
+    font-feature-settings: "calt" 1;
+    /* Enable ligatures for IE 10+, Edge */
+    text-rendering: optimizeLegibility;
+    /* Force ligatures for Webkit, Blink, Gecko */
     font-size:        map-get($font-size, medium);
     display:          inline-block;
     font-family:      map-get($font-families, 'code');

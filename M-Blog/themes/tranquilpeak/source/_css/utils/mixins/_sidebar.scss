@@ -2,6 +2,16 @@
 @mixin sidebar-md {
     width: map-get($sidebar, md-screen-width);
 
+    // Blog titie and subtitle
+    .sidebar-header {
+        .sidebar-title {
+            display: none;
+        }
+        .sidebar-subtitle {
+            display: none;
+        }
+    }
+
     // Author information
     .sidebar-profile {
         .sidebar-profile-picture {
@@ -50,6 +60,37 @@
 @mixin sidebar-lg {
     width: map-get($sidebar, lg-screen-width);
 
+    // Blog title and subtitle
+    .sidebar-header {
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.8) 0 0 1px, rgba(0, 0, 0, 0.8) 0 0 3px;
+        a {
+            text-decoration: none;
+        }
+
+        .sidebar-title {
+            color: map-get($sidebar, color);
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: lighten(map-get($sidebar, color), 35);
+            }
+        }
+        .sidebar-subtitle {
+            color: map-get($sidebar, color);
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 1.6rem;
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: lighten(map-get($sidebar, color), 35);
+            }
+        }
+    }
     // Author information
     .sidebar-profile {
         height:         130px;
@@ -123,6 +164,37 @@
         position: relative;
         padding:  0 80px;
     }
+
+    // Blog title and subtitle
+    .sidebar-header {
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 0.8) 0 0 1px, rgba(0, 0, 0, 0.8) 0 0 3px;
+        a {
+            text-decoration: none;
+        }
+
+        .sidebar-title {
+            color: map-get($sidebar, color);
+            margin: 0;
+            padding-bottom: 10px;
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: lighten(map-get($sidebar, color), 35);
+            }
+        }
+        .sidebar-subtitle {
+            color: map-get($sidebar, color);
+            margin: 0;
+            padding-bottom: 20px;
+            font-size: 1.6rem;
+            &:hover,
+            &:active{
+                text-decoration: none;
+                color: lighten(map-get($sidebar, color), 35);
+            }
+        }
+    }
     // Author information
     .sidebar-profile {
         padding-top:    0;
@@ -186,6 +258,9 @@
                     overflow:       hidden;
                     white-space:    nowrap;
                     text-overflow:  ellipsis;
+		    text-shadow: rgba(0, 0, 0, 0.8) 0 0 1px, rgba(0, 0, 0, 
+		    0.8) 0 0 3px;
+		    font-weight: 600;
                 }
             }
             &:nth-child(odd) {

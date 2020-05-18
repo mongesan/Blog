@@ -1,4 +1,5 @@
 <div class="<%= (classes ? classes.join(' ') : '') %>">
+    <i class="fas fa-file-alt"></i>
     <time datetime="<%= post.date.format() %>">
 	<% if (post.lang) { %>
 		    <%= post.date.locale(post.lang).format(__('date_format')) %>
@@ -7,6 +8,7 @@
     	<% } %>
     </time>
     <% if ((post.categories) && (post.categories.length > 0)) { %>
+        <i class="far fa-folder-open"></i>
         <span><%= __('post.categorized_in')  %> </span>
         <%- partial('category', {categories: post.categories})%>
     <% } %>

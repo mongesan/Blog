@@ -56,6 +56,10 @@ figure.highlight,
     .code {
         padding: 0.3em 15px 0.3em 1em;
         width:   100%;
+        font-feature-settings: "calt"1;
+        /* Enable ligatures for IE 10+, Edge */
+        text-rendering: optimizeLegibility;
+        /* Force ligatures for Webkit, Blink, Gecko */
 
         pre {
             max-width:  calc(#{map-get($main-content, 'max-width')} - 50px);

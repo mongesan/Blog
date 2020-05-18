@@ -6,23 +6,25 @@ $open-sans:            'Open Sans';
 $open-sans-sans-serif: 'Open Sans', sans-serif;
 $merriweather-serif:   'Merriweather', serif;
 $monospace:             Menlo, Consolas, monospace;
+$firacode:             'Fira Code', monospace;
+$kosugi-maru:          'Kosugi Maru';
 
-$font-family-base: $open-sans-sans-serif;
+$font-family-base: $kosugi-maru;
 
 $font-families: (
    // base
-   'headings':          $open-sans-sans-serif,
+   'headings':          $kosugi-maru,
    // components
-   'code':              $monospace,
-   'caption':           $merriweather-serif,
-   'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
-   'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
-   'post-excerpt-link': $open-sans-sans-serif,
-   'highlight':         $monospace,
+   'code':              $firacode,
+   'caption':           $kosugi-maru,
+   'image-gallery':     $kosugi-maru,
+   'post-header-cover': $kosugi-maru,
+   'post-meta':         $kosugi-maru,
+   'post-content':      $kosugi-maru,
+   'post-excerpt-link': $kosugi-maru,
+   'highlight':         $firacode,
    // layout
-   'sidebar':           $open-sans-sans-serif
+   'sidebar':           $kosugi-maru
 );
 
 // equal to 15px

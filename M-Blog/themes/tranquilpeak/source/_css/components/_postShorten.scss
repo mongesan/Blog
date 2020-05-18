@@ -36,6 +36,12 @@
         a {
             color: map-get($colors, light);
         }
+
+        i.fas {
+            width: 14px;
+            text-align: center;
+        }
+        
     }
     .postShorten-meta,
     .postShorten-readingtime {

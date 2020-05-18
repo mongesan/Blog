@@ -131,9 +131,11 @@ var feeds = [];
 %>
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="<%= config.title %>">
-    <title><%= title %></title>
+    <title><%= title %> - <%= config.subtitle %> - </title>
     <meta name="author" content="<%= config.author %>">
     <% if (keywords) { %>
         <meta name="keywords" content="<%= keywords %>">
@@ -180,7 +182,7 @@ var feeds = [];
         <% }) %>
     <% } %>
     <!--STYLES-->
-    <%- css('assets/css/style-yqn3eqtzaystbppeo3z8yuj3q0tnegfjkes8z4qwmvadlvxnjtnyluse1yfo.min.css') %>
+    <%- css('assets/css/style-navco7q9wxgxqnczz3k2wyqblr1ss3s35oy93ohgrrgeprhohwg6mliyn5p4.min.css') %>
     <!--STYLES END-->
     <%- partial('google-analytics') %>
     <%- partial('baidu-analytics') %>
