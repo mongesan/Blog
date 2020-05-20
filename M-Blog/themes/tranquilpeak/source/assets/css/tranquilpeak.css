@@ -2571,7 +2571,8 @@ a.tag,
   cursor: pointer;
   margin: 0;
   margin-right: 4px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  transition: all 300ms 0s ease; }
 
 a.tag--default,
 .tag--default {
@@ -2595,12 +2596,12 @@ a.tag--success,
 
 a.tag--primary,
 .tag--primary {
-  color: #349ef3 !important;
-  border: 1px solid #349ef3; }
+  color: #4dc657 !important;
+  border: 1px solid #4dc657; }
   a.tag--primary:hover,
   .tag--primary:hover {
-    color: #0c78ce !important;
-    border: 1px solid #0c78ce;
+    color: #309639 !important;
+    border: 1px solid #309639;
     text-decoration: none; }
 
 a.tag--danger,
@@ -2622,6 +2623,9 @@ a.tag--small,
 .tag--small {
   font-size: 1.3rem;
   padding: 2px 10px; }
+
+a.tag--hover:hover {
+  background: #4dc657; }
 
 .text-left {
   text-align: left !important; }
